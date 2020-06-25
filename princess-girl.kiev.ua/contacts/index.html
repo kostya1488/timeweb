@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta name="viewport" content="width=device-width">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="icon" type="image/png" href="favicon.png">
+
+	<meta charset="UTF-8">
+	<title>Контакты</title>
+	<link href="https://fonts.googleapis.com/css?family=Philosopher:400,400i,700,700i|Roboto:300,300i,400,400i,500,500i,700,700i,900,900i&amp;subset=cyrillic-ext" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="/assets/iview/styles/iview.css">
+	<link rel="stylesheet" type="text/css" href="/assets/dist/css/style.css@v=0003.css">
+</head>
+<body>
+				
+
+	
+<header class="header">
+	<section class="top-links">
+	<center>
+	<a href="#" class="bottom-links__link link link_phone">
+				+38(067)515-76-26	
+
+				</a>
+				
+			<a href="#" class="bottom-links__link link link_phone">
+				
+				+38(067)221-21-16
+	
+				</a>
+				
+			<a href="#" class="bottom-links__link link link_phone">
+				
+				+38(067)445-74-47
+				
+				</a>
+				
+			<a href="#" class="bottom-links__link link link_phone">
+				+38(067)405-73-03			
+				
+				</a>
+				
+			<a href="#" class="bottom-links__link link link_phone">				
+				+38(067)408-21-77
+				
+				</a>
+				
+			<a href="#" class="bottom-links__link link link_email">
+				princess-girls@ukr.net			</a></center>
+</section>
+	<section class="menu">
+	<div class="menu__wrap">
+		<a href="/" class="logo">Princess Girl</a>
+		<nav class="menu__nav">
+			<a href="/" class="menu__link">Главная</a>
+			<a href="/services/" class="menu__link">Услуги</a>
+			<a href="/about/" class="menu__link">Об агентстве</a>
+			<a href="/contacts/" class="menu__link">Контакты</a>
+		</nav>
+		
+	</div>
+</section>	<section class="breadcrumbs">
+	<ul class="breadcrumbs__list">
+					<li class="breadcrumbs__item">
+				<a href="index.html" class="breadcrumbs__link">Главная</a>
+			</li>
+					<li class="breadcrumbs__item">
+				<a href="services.html" class="breadcrumbs__link">Услуги</a>
+			</li>
+			</ul>
+</section>
+
+	<div class="header__content">
+					<h1 class="title header__title">Услуги агентства</h1>
+					</div>
+</header>
+
+<div class="page-content">
+	<div class="page-content__wrap">
+		
+<div class="wrapper">
+	<div class="contacts-page">
+
+		<div class="contacts-page__text">По всем вопросам можете обращаться по телефону:</div>
+				<div class="contacts-page__phone">+38(067)515-76-26</div>
+				<div class="contacts-page__phone">+38(067)221-21-16</div>
+				<div class="contacts-page__phone">+38(067)445-74-47</div>
+				<div class="contacts-page__phone">+38(067)405-73-03</div>
+				<div class="contacts-page__phone">+38(067)408-21-77</div>
+		
+
+		<div class="contacts-page__map">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2541.22737208962!2d30.51615581570706!3d50.436865379473524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cefde1be93cf%3A0x1b86aefb530a421d!2z0YPQuy4g0KjQvtGC0LAg0KDRg9GB0YLQsNCy0LXQu9C4LCDQmtC40LXQsiwgMDIwMDA!5e0!3m2!1sru!2sua!4v1537795900354" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+
+	</div>
+</div>
+	</div>
+</div>
+
+
+<div class="footer-nav">
+	<div class="footer-nav__wrap">
+
+		<section class="menu footer-nav__menu">
+			<div class="menu__wrap">
+				<nav class="menu__nav footer-nav__menu-links">
+					<a href="/" class="menu__link">Главная</a>
+					<a href="/services/" class="menu__link">Услуги</a>			
+					<a href="/about/" class="menu__link">Об агентстве</a>
+					<a href="/contacts/" class="menu__link">Контакты</a>
+				</nav>
+				
+			</div>
+		</section>
+
+	</div>
+</div>
+
+<footer class="footer">
+	<div class="footer__wrap">
+
+		<div class="footer__left">
+			<div class="footer__left-wrap">
+				<a href="index.html" class="footer__logo"></a>
+				<div class="footer__copyright">
+					© 2018 Princess-Girl
+					Все права защищены
+				</div>
+			</div>
+			
+		</div>
+
+		<div class="footer__right">
+			<a href="index.html#" class="footer__phone">
+				+38(067)515-76-26<br>
+				+38(067)221-21-16<br>
+				+38(067)445-74-47<br>
+				+38(067)405-73-03<br>
+				+38(067)408-21-77<br>
+
+							</a>
+		</div>
+
+	</div>
+</footer>
+	<div
+	class="call-order"
+	id="call-order"
+	v-show="isShowModal"
+>
+
+	<div
+		class="call-order__modal"
+		v-on:click.self="hideModal">
+		<div class="call-order__modal-wrap">
+
+			<div class="modal-close" v-on:click="hideModal">✖</div>
+
+			<div class="call-order__modal-container">
+				<div class="call-order__modal-content">
+
+					<div v-if="modalContent.order">
+						<div class="call-order__title">
+							Заказать бесплатный звонок
+						</div>
+
+						<div class="call-order__separator">●</div>
+
+						<div class="call-order__text">
+							Укажите свои контактные данные и наш менеджер свяжется с Вами в ближайшее время.
+						</div>
+
+						<div class="call-order__form">
+							<form action="http://euroescort.ru/call-order" method="POST" v-on:submit.prevent="submitForm">
+								<div class="call-order__form-field">
+									<label class="call-order__label">
+										Укажите своё имя:
+
+										<input
+											type="text"
+											name="name"
+											required="true"
+											v-model="formFields.name"
+											:class="{
+												'call-order__input': true, 'call-order__input_active': formFields.name
+											}">
+									</label>
+								</div>
+								<div class="call-order__form-field">
+									<label class="call-order__label">
+										Укажите номер телефона:
+
+										<input
+											type="phone"
+											name="phone"
+											required="true"
+											v-model="formFields.phone"
+											:class="{
+												'call-order__input': true, 'call-order__input_active': formFields.phone
+											}">
+									</label>
+								</div>
+
+								<div class="call-order__form-field">
+									<button type="submit" class="btn btn_flat-yellow call-order__btn">Отправить »</button>
+								</div>
+							</form>
+						</div>
+					</div>
+
+					<div v-if="modalContent.success">
+						<div class="call-order__title">
+							Поздравляем!
+						</div>
+
+						<div class="call-order__separator">●</div>
+
+						<div class="call-order__text">
+							Вы успешно заказали бесплатный звонок!
+							<br>
+							Наш менеджер скоро Вам перезвонит.
+						</div>
+
+						<div class="call-order__form">
+							<div class="call-order__form-field">
+								<button
+									type="submit"
+									class="btn btn_flat-yellow call-order__btn"
+									v-on:click="hideModal"
+								>
+									Закрыть
+								</button>
+							</div>
+						</div>
+					</div>
+
+					<div v-if="modalContent.error">
+						<div class="call-order__title">
+							Упс... :(
+						</div>
+
+						<div class="call-order__separator">●</div>
+
+						<div class="call-order__text">
+							Что-то пошло не так. Попробуйте отправить свои данные ещё один раз, пожалуйста.
+						</div>
+
+						<div class="call-order__form">
+							<div class="call-order__form-field">
+								<button
+									type="submit"
+									class="btn btn_flat-yellow call-order__btn"
+									v-on:click="switchContent('order')"
+								>
+									Ещё раз »
+								</button>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</div>
+	<script src="/assets/animatelo.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.3.0/vue.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.3.0/vue.js"></script>
+	<script src="assets/dist/js/bundle.js@v=0003"></script>
+	<script src="assets/iview/iview.js"></script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter46210764 = new Ya.Metrika({
+                    id:46210764,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/46210764" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+</body>
+</html>

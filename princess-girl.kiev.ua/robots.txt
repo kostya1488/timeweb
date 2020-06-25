@@ -1,0 +1,12 @@
+User-agent: *
+
+Crawl-delay: 10
+
+Sitemap: https://princess-girl.kiev.ua//sitemap.xml 
+
+Host: https://princess-girl.kiev.ua/
+RewriteEngine On
+RewriteBase /
+RewriteCond %{HTTP:SSL} !=1 [NC]
+RewriteRule ^(.*) https://princess-girl.kiev.ua/
+$1 [L,R=301]

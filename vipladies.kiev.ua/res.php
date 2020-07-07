@@ -1,38 +1,40 @@
+  
 <?php
 
-$name = $_POST['name'];
-$age = $_POST['age'];
-$weight = $_POST['weight'];
-$opyt = $_POST['experience'];
-$english = $_POST['english'];
-$skype = $_POST['skype'];
-$viber = $_POST['viber'];
-$whatsup = $_POST['whatsup'];
-$email = $_POST['email'];
-$number = $_POST['number'];
+$name = trim($_POST['name']);
+$age = trim($_POST['age']);
+$weight = trim($_POST['weight']);
+$opyt = trim($_POST['experience']);
+$english = trim($_POST['english']);
+$skype = trim($_POST['skype']);
+$viber = trim($_POST['viber']);
+$whatsup = trim($_POST['whatsup']);
+$country_from = trim($_POST['country_from']);
+$email = trim($_POST['email']);
+$number = trim($_POST['number']);
 
+$recepient = "richladyinkyiv@gmail.com";
+// $recepient = "matvienkoigor956@gmail.com";
+$pagetitle = "заявка с сайта ";
 
-$to = "vipladieskiev@gmail.com"; 
-
-$subject = "Заявка с сайта"; 
-
-$message = '<p>Заявка:</p> </br> <b>Имя: '.$name.'</b> </br>';
-$message .= '<b>Возраст: '.$age.'</b> </br>';
-$message .= '<b>Вес: '.$weight.'</b> </br>';
-$message .= '<b>Опыт работы есть?: '.$opyt.'</b> </br>';
-$message .= '<b>Владение английским: '.$english.'</b> </br>';
-$message .= '<b>Скайп: '.$skype.'</b> </br>';
-$message .= '<b>Вайбер: '.$viber.'</b> </br>';
-$message .= '<b>Ватсап: '.$whatsup.'</b> </br>';
-$message .= '<b>Почта: '.$email.'</b> </br>';
-$message .= '<b>Телефон: '.$number.'</b> </br>';
-
-$headers  = "Content-type: text/html; charset=windows-1251 \r\n"; 
-$headers .= "From: От кого письмо $email\r\n"; 
-$headers .= "Reply-To: vipladieskiev@gmail.com\r\n"; 
-
-mail($to, $subject, $message, $headers); 
+$message = "Имя: ".$name."\r\n";
+$message .= "Возраст: ".$age."\r\n";
+$message .= "Вес: ".$weight."\r\n";
+$message .= "Опыт работы есть?: ".$opyt."\r\n";
+$message .= "Владение английским: ".$english."\r\n";
+$message .= "Скайп: ".$skype."\r\n";
+$message .= "Вайбер: ".$viber."\r\n";
+$message .= "Ватсап: ".$whatsup."\r\n";
+$message .= "Страна: ".$country_from."\r\n";
+$message .= "Почта: ".$email."\r\n";
+$message .= "Телефон: ".$number;
 
 
 
-echo "Ваша анкета успешно отправлена.<br> В ближайшее время мы с Вами свяжемся";
+
+mail($recepient, $pagetitle, $message, "Content-type: text/plain; charset=\"utf-8\"\n From: $recepient");
+
+echo "Ваша анкета успешно отправлена.<br> В ближайшее время мы с Вами свяжемся.";
+
+
+?>
